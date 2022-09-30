@@ -1,0 +1,74 @@
+.my_team {
+	width: 100%;
+}
+
+.team_info {
+	display: flex;
+	height: 150px;
+	width: 100%;
+}
+
+.team_info_text {
+	width: 250px;
+}
+
+.team_info_image {
+	width: calc(100% - 250px);
+	display: flex;
+	justify-content: center;
+}
+
+.team_info img {
+	max-width: 100%;
+	max-height: 100%;
+	align-self: center;
+}
+
+.team_history {
+	width: 100%;
+}
+
+.team_history h4 {
+	margin-left: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+.team_history h4:nth-child(2) {
+	margin-top: 0.5rem;
+}
+
+.team_history_tables {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.team_history table {
+	border-collapse: collapse;
+	max-width: 100%;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.team_history tr {
+	outline: 1px solid white;
+}
+
+.team_history td {
+	text-align: left;
+	padding: 0.5rem 0.75rem;
+}
+
+.team_history thead,
+.team_history tbody {
+	color: white;
+}
+
+.team_history thead {
+	background-color: var(--header-bg);
+	border-bottom: 3px solid white;
+}
+
+.team_history tbody {
+	background-color: #444;
+}

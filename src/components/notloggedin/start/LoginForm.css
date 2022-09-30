@@ -1,0 +1,98 @@
+.right .login-form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	align-items: center;
+}
+
+.login-form h2 {
+	font-size: 1.2rem;
+}
+
+.login-input {
+	width: 100%;
+	border: none;
+	border-radius: 0.75rem;
+	margin: 8px 0;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition: 0.3s;
+	background-color: #dddddd;
+}
+
+.login-input:focus {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon .login-input {
+	padding-left: 40px;
+}
+
+.inputWithIcon {
+	position: relative;
+	width: 210px;
+}
+
+.inputWithIcon i {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	padding: 9px 8px;
+	color: #aaa;
+	transition: 0.3s;
+}
+
+.inputWithIcon span {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	padding: 9px 8px;
+	color: #aaa;
+	transition: 0.3s;
+}
+
+.inputWithIcon span:hover {
+	color: #575757;
+}
+
+.inputWithIcon .login-input:focus + i {
+	color: dodgerBlue;
+}
+
+.inputWithIcon i,
+.inputWithIcon span {
+	color: #8a8a8a;
+	padding: 15px 8px;
+	border-radius: 4px 0 0 4px;
+}
+
+.check-forgot {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.75rem;
+	width: 90%;
+}
+
+#remember,
+.remember-label,
+.forgot-password {
+	cursor: pointer;
+}
+
+.remember-label {
+	margin-left: 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.inputWithIcon {
+		width: 250px;
+	}
+
+	.check-forgot {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 225px;
+	}
+}

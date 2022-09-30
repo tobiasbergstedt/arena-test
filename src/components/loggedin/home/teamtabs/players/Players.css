@@ -1,0 +1,53 @@
+.players {
+	width: 100%;
+}
+
+.players_grid {
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fill, minmax(245px, 348px));
+}
+
+.single_player {
+	background-color: white;
+	color: var(--header-bg);
+	padding: 0.75rem;
+	display: flex;
+	border-radius: 1rem;
+	align-items: center;
+	box-shadow: 0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
+	transition: transform 0.15s, color 0.2s;
+	max-width: 348px;
+}
+
+.single_player:hover {
+	cursor: pointer;
+	color: var(--team-menu);
+	transform: translateY(0.2rem);
+}
+
+.single_player:hover img {
+	filter: drop-shadow(0.125rem 0.125rem 0.2rem rgba(0, 0, 0, 1));
+}
+
+.single_player img {
+	width: 60px;
+	height: 60px;
+	filter: drop-shadow(0.125rem 0.125rem 0.2rem rgba(0, 0, 0, 0.8));
+	margin-right: 0.75rem;
+	transition: filter 0.2s;
+}
+
+.single_player .name_number {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.player {
+	display: flex;
+}
+
+.player .left,
+.player .right {
+	width: 50%;
+}

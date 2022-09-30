@@ -1,0 +1,16 @@
+.return-tab-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 5.5rem;
+	right: 1.5rem;
+}
+
+.return-tab-button .return-arrow {
+	margin: 0;
+	width: 45px;
+	height: 45px;
+	outline: 2px solid white;
+}

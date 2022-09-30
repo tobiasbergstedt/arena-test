@@ -1,0 +1,60 @@
+.games {
+	width: 100%;
+	height: 100%;
+}
+
+.games table {
+	width: 100%;
+	border-radius: 0.75rem;
+	overflow: hidden;
+	box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+	border-collapse: collapse;
+	color: var(--team-menu);
+	background-color: #cccccc;
+}
+
+.games tbody tr {
+	outline: 1px solid white;
+}
+
+.games thead tr {
+	background-color: var(--team-menu);
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.games thead td:last-child {
+	text-align: center;
+}
+
+.games td {
+	padding: 0.5rem;
+}
+
+.games tbody tr:first-child,
+.games tbody tr:nth-child(2) {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.games tbody tr:first-child:hover,
+.games tbody tr:nth-child(2):hover {
+	color: var(--header-bg);
+}
+
+.games .date {
+	width: 17%;
+}
+
+.games .team1,
+.games .team2 {
+	width: 29%;
+}
+
+.games .fixture,
+.games .vs,
+.games .team1Periods,
+.games .team2Periods,
+.games .divider {
+	width: 5%;
+}

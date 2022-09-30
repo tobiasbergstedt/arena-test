@@ -1,0 +1,86 @@
+.start {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: rgb(226, 226, 226);
+	min-height: calc(
+		100vh - var(--header-height) - var(--footer-height) - 2 * var(--main-margin)
+	);
+}
+
+.start .left {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.left p {
+	margin-top: 1rem;
+}
+
+.start .right {
+	width: calc(100% - 4rem);
+	margin: 1rem;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 2rem;
+	box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divider-table {
+	width: 100%;
+	height: 80px;
+}
+
+.divider {
+	width: 1px;
+	padding: 0 10px;
+	white-space: nowrap;
+	position: relative;
+	top: -2px;
+}
+
+.to-create {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.to-create p {
+	width: 50%;
+}
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (min-width: 1024px) {
+	.start {
+		flex-direction: row;
+	}
+
+	.start .left {
+		width: calc(50% - 8rem);
+		padding: 4rem;
+	}
+
+	.start .right {
+		width: calc(50% - 4rem);
+		margin: 0;
+		padding: 2rem;
+		box-shadow: none;
+		border-radius: 0;
+		justify-content: center;
+	}
+
+	.divider-table {
+		margin: 0;
+		height: 180px;
+	}
+}

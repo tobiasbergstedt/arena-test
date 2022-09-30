@@ -1,0 +1,186 @@
+.league {
+	min-height: 100%;
+	color: var(--team-menu);
+}
+
+.league .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.league .top .division_title {
+	margin-left: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.league table {
+	border-radius: 0.75rem;
+	overflow: hidden;
+	box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.table_image {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.table_image .table {
+	background-color: white;
+	width: 60%;
+	margin-right: 1rem;
+}
+
+.table_image .image {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.table_image .image img {
+	border-radius: 0.75rem;
+	box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.table table {
+	/* background-color: aqua; */
+	border-collapse: collapse;
+	background: linear-gradient(to top left, #222, #666);
+	color: white;
+	width: 100%;
+}
+
+.table tbody tr,
+.league .fixtures tbody tr,
+.league_statistics tbody tr {
+	outline: 1px solid white;
+}
+
+.table tbody tr:first-child {
+	/* background-color: var(--text-hover); */
+	/* color: var(--team-menu); */
+	background-color: rgba(34, 172, 0, 0.466);
+}
+
+.league_statistics tbody tr:first-child {
+	color: white;
+	background-color: rgb(72, 131, 54);
+}
+
+.table tbody tr:nth-child(8),
+.table tbody tr:nth-child(9),
+.table tbody tr:nth-child(10) {
+	background-color: #bebebe;
+	color: var(--team-menu);
+}
+
+.table tbody td:nth-child(2) {
+	width: 45%;
+}
+
+.table thead tr,
+.league .fixtures thead tr {
+	background-color: var(--team-menu);
+	border-bottom: 2px solid white;
+}
+
+.league_statistics {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+.league_statistics thead tr {
+	background-color: var(--team-menu);
+}
+
+.league_statistics thead tr:nth-child(2) {
+	border-bottom: 2px solid white;
+}
+
+.table td,
+.league .fixtures td,
+.league_statistics td {
+	padding: 0.5rem;
+}
+
+.league .fixtures {
+	background-color: white;
+	width: 100%;
+}
+
+.league .fixtures table,
+.league_statistics table {
+	border-collapse: collapse;
+	color: var(--team-menu);
+	background-color: #cccccc;
+	min-width: 100%;
+}
+
+.league .fixtures table thead,
+.league_statistics table thead {
+	color: white;
+}
+
+.last_round {
+	margin-bottom: 1.5rem;
+}
+
+.league .fixtures .team1,
+.league .fixtures .team2 {
+	width: 35%;
+}
+
+.league .fixtures .vs {
+	width: 10%;
+}
+
+.league .fixtures .space_divider,
+.league .fixtures .divider,
+.league .fixtures team1Periods,
+.league .fixtures team2Periods {
+	width: 5%;
+}
+
+.league .fixtures .last_round tbody tr {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.league .fixtures .last_round tbody tr:hover {
+	color: var(--header-bg);
+}
+
+.fixtures_link,
+.statistics_link,
+.division_title {
+	cursor: pointer;
+}
+
+.fixtures_link:hover,
+.statistics_link:hover,
+.division_title:hover {
+	color: var(--header-bg);
+}
+
+/* .fixtures.league_fixtures {
+	width: 90%;
+} */
+
+.league_fixtures table {
+	margin-bottom: 1rem;
+}
+
+.league_fixtures table:nth-child(2) tbody,
+.league_fixtures table:nth-child(3) tbody {
+	font-weight: 600;
+}
+
+.league_statistics table {
+	width: 45%;
+}
